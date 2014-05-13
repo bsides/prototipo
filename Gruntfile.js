@@ -30,7 +30,7 @@ module.exports = function (grunt) {
             message: 'Auto-generated commit by Grunt'
           },
           src: ['**']
-        }
+        },
 
         // Project settings
         config: config,
