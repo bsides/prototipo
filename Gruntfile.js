@@ -24,18 +24,15 @@ module.exports = function (grunt) {
     // Define the configuration for all the tasks
     grunt.initConfig({
 
-        buildGhPages: {
-          ghPages: {
-            // Leave empty if you just want to run the defaults
-          },
-          production: {
+        grunt.initConfig({
+          'gh-pages': {
             options: {
-              build_branch: "gh-pages",
-              dist: "dist",
-              pull: false
-            }
+              base: 'dist',
+              message: 'Auto-generated commit by Grunt'
+            },
+            src: ['**']
           }
-        },
+        });
 
         // Project settings
         config: config,
@@ -441,5 +438,5 @@ module.exports = function (grunt) {
         'build'
     ]);
 
-    grunt.loadNpmTasks('grunt-build-gh-pages');
+    grunt.loadNpmTasks('grunt-gh-pages');
 };
