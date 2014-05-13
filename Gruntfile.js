@@ -30,8 +30,8 @@ module.exports = function (grunt) {
           },
           production: {
             options: {
-              build_branch: "prod",
-              dist: "prodOptimized",
+              build_branch: "gh-pages",
+              dist: "dist",
               pull: false
             }
           }
