@@ -791,6 +791,61 @@ body {
 
 
 /*********************************************
+ * ZOOMB TRANSITION
+ *********************************************/
+
+.reveal .slides>section[data-transition=zoomb],
+.reveal.zoomb .slides>section {
+  -webkit-transition-timing-function: ease;
+     -moz-transition-timing-function: ease;
+      -ms-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.reveal .slides>section[data-transition=zoomb].past,
+.reveal.zoomb .slides>section.past {
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transform: scale(0.2);
+     -moz-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+       -o-transform: scale(0.2);
+          transform: scale(0.2);
+}
+.reveal .slides>section[data-transition=zoomb].future,
+.reveal.zoomb .slides>section.future {
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transform: scale(16);
+     -moz-transform: scale(16);
+      -ms-transform: scale(16);
+       -o-transform: scale(16);
+          transform: scale(16);
+
+}
+
+.reveal .slides>section>section[data-transition=zoomb].past,
+.reveal.zoomb .slides>section>section.past {
+  -webkit-transform: translate(0, 150%);
+     -moz-transform: translate(0, 150%);
+      -ms-transform: translate(0, 150%);
+       -o-transform: translate(0, 150%);
+          transform: translate(0, 150%);
+}
+.reveal .slides>section>section[data-transition=zoomb].future,
+.reveal.zoomb .slides>section>section.future {
+  -webkit-transform: translate(0, -150%);
+     -moz-transform: translate(0, -150%);
+      -ms-transform: translate(0, -150%);
+       -o-transform: translate(0, -150%);
+          transform: translate(0, -150%);
+}
+
+
+/*********************************************
  * LINEAR TRANSITION
  *********************************************/
 
