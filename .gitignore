@@ -1,6 +1,0 @@
-node_modules
-.tmp
-.sass-cache
-.grunt
-bower_components
-test/bower_components
