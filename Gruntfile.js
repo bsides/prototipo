@@ -26,10 +26,9 @@ module.exports = function (grunt) {
 
         'gh-pages': {
           options: {
-            base: 'dist',
-            message: 'Auto-generated commit by Grunt'
+            base: 'dist'
           },
-          src: ['*.html', '*.js', '*.css']
+          src: ['**/*']
         },
 
         // Project settings
