@@ -24,15 +24,13 @@ module.exports = function (grunt) {
     // Define the configuration for all the tasks
     grunt.initConfig({
 
-        grunt.initConfig({
-          'gh-pages': {
-            options: {
-              base: 'dist',
-              message: 'Auto-generated commit by Grunt'
-            },
-            src: ['**']
-          }
-        });
+        'gh-pages': {
+          options: {
+            base: 'dist',
+            message: 'Auto-generated commit by Grunt'
+          },
+          src: ['**']
+        }
 
         // Project settings
         config: config,
