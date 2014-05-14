@@ -1,0 +1,214 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+  <title>IBEP - Protótipo de Exemplos OED PNLD 2016</title>
+  <meta name="description" content="Protótipo de Exemplos para Objetos Educationais Digitais (OEDs) para PNLD 2016">
+  <meta name="author" content="IBEP">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'styles/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <div id="timeline"></div>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="scripts/head.min.js"></script>
+  <script src="scripts/timelinejs/js/storyjs-embed.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var dataObject = {
+        timeline: {
+
+          headline: "História dos Livros Digitais",
+          type: "default",
+          text: "O livro didático ontem, hoje e amanhã",
+          asset: {
+            media: "http://www.editoraibep.com.br/ibep2010/images/logo.jpg",
+            //credit: "Logo IBEP",
+            caption: "Objeto Educacional Digital"
+          },
+
+          date: [
+            {
+              startDate: "1844",
+              endDate: "1844",
+              tag: "Evento",
+              headline: "Fundação da Livraria Garnier",
+            },
+            {
+              startDate: "1854",
+              endDate: "1854",
+              tag: "Evento",
+              headline: "Fundação da Livraria Francisco Alves",
+              text: "<p>O francês Baptiste Louis Garnier, considerado o primeiro editor a diferencial impressão de edição, passa a dividir com a Typografia Universal o mercado de livros, sendo o responsável pelos exemplares de literatura. Funda a Livraria Garnier, que, na época, tornou-se um ponto de referência no Rio de Janeiro. É considerada a principal responsável pelo desenvolvimento editorial no Brasil, por regulamentar a questão dos direitos autorais, ter revisores e tradutores fixos, capacitados e bem remunerados, além de investir maciçamente na literatura nacional e internacional.</p>"
+            },
+            {
+              startDate: "1859",
+              endDate: "1859",
+              tag: "Publicação",
+              headline: "Manual Explicativo ou Método de Leitura Escola Brasileira",
+              text: "<p>Publicado por Francisco Alves de Castilho, pela E & H Laemmert</p>",
+            },
+            {
+              startDate: "1880",
+              endDate: "1880",
+              tag: "Publicação",
+              headline: "Cartilha Nacional",
+              text: "<p>Publicado por Hilário Ribeiro</p>",
+              asset: {
+                media: "http://www.histedbr.fae.unicamp.br/navegando/glossario/verb_c_cartilhas_arquivos/image002.jpg",
+                //thumbnail: "",
+                credit: "UNICAMP",
+                caption: "Cartilha Nacional",
+              }
+            },
+            {
+              startDate: "1890",
+              endDate: "1890",
+              tag: "Publicação",
+              headline: "Cartilha da Infância",
+              text: "<p>Data provável da primeira edição da Cartilha da Infância, de Tomaz Galhardo, que começava a utilizar o método silábico. A segunda edição foi ampliada pelo professor Romão Puiggari, discípulo de Galhardo.</p>",
+              asset: {
+                media: "http://www.crmariocovas.sp.gov.br/images/mem/obj/l_alta/l_055a_mem.jpg",
+                //thumbnail: "",
+                credit: "Centro de Referência em Educação Mario Covas",
+                caption: "Cartilha da Infância",
+              }
+            },
+            {
+              startDate: "1925",
+              endDate: "1925",
+              tag: "Evento",
+              headline: "Monteiro Lobato funda Companhia Editora Nacional",
+              text: "<p>Data provável da primeira edição da Cartilha da Infância, de Tomaz Galhardo, que começava a utilizar o método silábico. A segunda edição foi ampliada pelo professor Romão Puiggari, discípulo de Galhardo.</p>",
+              asset: {
+                media: "http://4.bp.blogspot.com/_ZGkiy_uIPLs/TFTG2ar028I/AAAAAAAABFY/MBDdnN4h30c/s1600/CiaEditoraNacional.jpg",
+                //thumbnail: "",
+                //credit: "Centro de Referência em Educação Mario Covas",
+                //caption: "Cartilha da Infância",
+              }
+            },
+            {
+              startDate: "1929",
+              endDate: "1929",
+              tag: "Evento",
+              headline: "Criação do INL - Instituto Nacional do Livro",
+              text: "<p>Órgão responsável pelo desenvolvimento de políticas pública voltadas ao livro didático</p>",
+              asset: {
+                media: "http://3.bp.blogspot.com/-QSbYd9VqwUo/TcIGTHHq_NI/AAAAAAAAAIY/1Ytb_yA7Wb0/s400/biblioteca+nacional.png",
+                //thumbnail: "",
+                //credit: "Centro de Referência em Educação Mario Covas",
+                //caption: "Cartilha da Infância",
+              }
+            },
+            {
+              startDate: "1938,12,30",
+              endDate: "1938,12,30",
+              tag: "Lei",
+              headline: "Decreto-Lei 1.006",
+              text: '<p>Comissão Nacional do Livro Didático (CNLD), política de legislação e controle de produção e circulação do livro didático no Brasil. No Art. 2 consagra pela primeira vez o termo "livro didático"</p>',
+            },
+            {
+              startDate: "1948",
+              endDate: "1948",
+              tag: "Publicação",
+              headline: "Caminho Suave",
+              text: "<p>Publicado por Branca Alves de Lima, trata da alfabetização pela imagem</p>",
+              asset: {
+                media: "http://planetajc.blog.terra.com.br/files/2009/09/caminho-suave-ed-original.jpg",
+                //thumbnail: "",
+                //credit: "Terra Blog",
+                caption: "Edição Original de Caminho Suave",
+              }
+            },
+            {
+              startDate: "1968",
+              endDate: "1968",
+              tag: "Evento",
+              headline: "Fundação da editora Moderna",
+              text: "<p></p>",
+              asset: {
+                media: "http://www.moderna.com.br/custom/Moderna/Portal/images/logoModerna.gif",
+                //thumbnail: "",
+                //credit: "Terra Blog",
+                //caption: "Edição Original de Caminho Suave",
+              }
+            },
+
+          ],
+
+          era: [
+            {
+              startDate: "1844",
+              endDate: "1844",
+              headline: "Primeira Livraria",
+              //text: "<p>Body text goes here, some HTML is OK</p>",
+              tag: "Evento"
+            },
+            {
+              startDate: "1938",
+              endDate: "1938",
+              headline: "Primeira Lei",
+              //text: "<p>Body text goes here, some HTML is OK</p>",
+              tag: "Lei"
+            }
+
+          ]
+        }
+      }
+
+      createStoryJS({
+        type:       'timeline',
+        width:      '1024',
+        height:     '900',
+        source:     dataObject,
+        embed_id:   'timeline',
+        //language:   'pt-br',
+        font:       'PTSerif-PTSans',
+
+        debug:      true
+      });
+    });
+  </script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    .storyjs-embed.sized-embed {
+      border: 0;
+    }
+  </style>
+  <!-- endbower -->
+</body>
+</html>
