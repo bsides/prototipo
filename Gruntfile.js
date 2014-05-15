@@ -229,6 +229,9 @@ module.exports = function (grunt) {
             timeline: {
                 src: '<%= config.app %>/timeline.html'
             },
+            galeria: {
+                src: '<%= config.app %>/galeria.html'
+            }
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
