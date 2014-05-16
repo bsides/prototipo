@@ -210,7 +210,7 @@ module.exports = function (grunt) {
                         '<%= config.dist %>/styles/{,*/}*.css',
                         '<%= config.dist %>/images/{,*/}*.*',
                         '<%= config.dist %>/media/{,*/}*.*',
-                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
+                        //'<%= config.dist %>/styles/fonts/{,*/}*.*',
                         '<%= config.dist %>/*.{ico,png}',
                     ]
                 }
@@ -351,13 +351,13 @@ module.exports = function (grunt) {
                     src: 'media/{,*/}*.{mp4,mp3}'
                 },
                 // Font Awesome
-                {
-                    expand: true,
-                    dot: true,
-                    cwd: 'bower_components/fontawesome/fonts/',
-                    src: ['**'],
-                    dest: '<%= config.dist %>/styles/fonts/'
-                },
+                // {
+                //     expand: true,
+                //     dot: true,
+                //     cwd: 'bower_components/fontawesome/fonts/',
+                //     src: ['**'],
+                //     dest: '<%= config.dist %>/styles/fonts/'
+                // },
                 // TimelineJS
                 {
                     expand: true,
