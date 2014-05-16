@@ -1,0 +1,1 @@
+Reveal.initialize({controls:!0,progress:!0,history:!0,center:!0,loop:!1,previewLinks:!0,theme:Reveal.getQueryHash().theme,transition:Reveal.getQueryHash().transition||"zoomb",dependencies:[{src:"scripts/class.js",condition:function(){return!document.body.classList}}]});
