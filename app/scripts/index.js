@@ -23,8 +23,13 @@ var ibepjs = {
 
 $(function() {
   // Botão abre popup com opções abaixo
-  $('button').on('click', function() {
-    var nome = $(this).attr('id');
-    ibepjs.opener.init(1024,900,nome + '.html',nome);
-  });
+  $('#menu').on('click', '> a', function(e) {
+    e.preventDefault();
+    var href = $(this).attr('href');
+    ibepjs.opener.init(1024,900,href);
+  })
+  // $('button').on('click', function() {
+  //   var nome = $(this).attr('id');
+  //   ibepjs.opener.init(1024,900,nome + '.html',nome);
+  // });
 });

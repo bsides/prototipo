@@ -20,11 +20,6 @@
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/index.css -->
   <link rel="stylesheet" href="styles/main.css">
-  <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,600' rel='stylesheet' type='text/css'>
-  <style>
-  html,body,button { font-family: 'Signika Negative', sans-serif; }
-  button { padding: 5px 12px; font-size: 18px; background: #efefef; border: 1px solid #ccc; font-weight: 300 }
-  </style>
   <!-- endbuild -->
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="../bower_components/modernizr/modernizr.js"></script>
@@ -44,14 +39,48 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <button class="main-button" id="galeria">Galeria: Zoom</button>
-  <button class="main-button" id="timeline">Timeline: História dos LDs</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+        <h1><span class="fa fa-exclamation-circle text-info"></span> Escolha uma opção</h1>
+        <p class="lead">Cada OED está separado em uma janela diferente para facilitar o desenvolvimento, porém todas as funcionalidades podem ficar no mesmo OED</p>
+
+        <div class="list-group" id="menu">
+          <a href="fotos.html" class="list-group-item">
+            <h4 class="list-group-item-heading"><span class="fa fa-camera"></span> Galeria de Fotos</h4>
+            <p class="list-group-item-text">Uma galeria básica mostrando fotos. Em alguns slides existem legendas e outros exemplos de transição.</p>
+          </a>
+          <a href="videos.html" class="list-group-item">
+            <h4 class="list-group-item-heading"><span class="fa fa-film"></span> Galeria de Vídeos</h4>
+            <p class="list-group-item-text">Mesmo que a de fotos, mas com links de vídeos embedados e um controle de HTML5 para tocar offline.</p>
+          </a>
+          <a href="sons.html" class="list-group-item">
+            <h4 class="list-group-item-heading"><span class="fa fa-music"></span> Galeria de Sons</h4>
+            <p class="list-group-item-text">Seguindo o mesmo padrão de vídeos, mas com sons.</p>
+          </a>
+          <a href="zoom.html" class="list-group-item">
+            <h4 class="list-group-item-heading"><span class="fa fa-search"></span> História em Zoom</h4>
+            <p class="list-group-item-text">Um exemplo de história sendo contada sem texto, somente com o efeito de zoom.</p>
+          </a>
+          <a href="cubo.html" class="list-group-item">
+            <h4 class="list-group-item-heading"><span class="fa fa-cube"></span> História em Cubo</h4>
+            <p class="list-group-item-text">...e um exemplo parecido em cubo.</p>
+          </a>
+          <a href="timeline.html" class="list-group-item">
+            <h4 class="list-group-item-heading"><span class="fa fa-road"></span> Timeline</h4>
+            <p class="list-group-item-text">Diferente dos outros, este contém um exemplo de OED com uma timeline embutida.</p>
+          </a>
+          <a href="kitchensink.html" class="list-group-item">
+            <h4 class="list-group-item-heading"><span class="fa fa-cutlery"></span> Kitchen Sink</h4>
+            <p class="list-group-item-text">Genérico, com as funcionalidades acima (exceto Timeline).</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- build:js({app,.tmp}) scripts/index.js -->
   <script src="scripts/index.js"></script>
   <!-- endbuild -->

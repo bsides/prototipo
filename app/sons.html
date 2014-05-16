@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+  <title>IBEP - Protótipo de Exemplos OED PNLD 2016</title>
+  <meta name="description" content="Protótipo de Exemplos para Objetos Educationais Digitais (OEDs) para PNLD 2016">
+  <meta name="author" content="IBEP">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/reveal.css">
+  <link rel="stylesheet" href="styles/default.css" id="theme">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'styles/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+  <!-- endbuild -->
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="reveal" style="/*width:1024px;height:600px*/">
+
+    <h4 style="text-align:center;margin:0;background:#fff;padding:12px 0;color:#999;font-weight:400">Protótipo de Exemplos OED PNLD 2016</h4>
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section data-transition="linear">
+        <h1>Sons</h1>
+        <h3>Exemplos de OEDs simples</h3>
+        <p>
+          <small>
+            Seguindo o mesmo padrão de vídeos, mas com sons.
+          </small>
+        </p>
+      </section>
+
+      <section>
+        <h2>Susan Cain: "O poder dos introvertidos"</h2>
+        <audio data-autoplay controls src="media/SusanCain_2012.mp3"></audio>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="scripts/head.min.js"></script>
+  <script src="scripts/reveal.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js scripts/plugins.js -->
+  <script src="scripts/plugins.js"></script>
+  <!-- endbuild -->
+  <!-- build:js({app,.tmp}) scripts/sons.js -->
+  <script src="scripts/videos.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

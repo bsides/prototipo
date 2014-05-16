@@ -1,0 +1,1 @@
+Reveal.initialize({controls:!0,progress:!1,history:!0,center:!0,loop:!0,previewLinks:!0,theme:Reveal.getQueryHash().theme,transition:"cube",dependencies:[{src:"scripts/class.js",condition:function(){return!document.body.classList}}]});

@@ -209,6 +209,7 @@ module.exports = function (grunt) {
                         '<%= config.dist %>/scripts/{,*/}*.js',
                         '<%= config.dist %>/styles/{,*/}*.css',
                         '<%= config.dist %>/images/{,*/}*.*',
+                        '<%= config.dist %>/media/{,*/}*.*',
                         '<%= config.dist %>/styles/fonts/{,*/}*.*',
                         '<%= config.dist %>/*.{ico,png}',
                     ]
@@ -224,16 +225,20 @@ module.exports = function (grunt) {
                 dest: '<%= config.dist %>'
             },
             html: [
-                '<%= config.app %>/index.html',
-                '<%= config.app %>/timeline.html',
-                '<%= config.app %>/galeria.html'
+                //'<%= config.app %>/index.html',
+                //'<%= config.app %>/timeline.html',
+                '<%= config.app %>/*.html'
                 ]
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
+                assetsDirs: [
+                    '<%= config.dist %>',
+                    '<%= config.dist %>/images',
+                    '<%= config.dist %>/media'
+                ]
             },
             html: ['<%= config.dist %>/{,*/}*.html'],
             css: ['<%= config.dist %>/styles/{,*/}*.css']
@@ -336,6 +341,22 @@ module.exports = function (grunt) {
                     cwd: '.',
                     src: ['bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap/*.*'],
                     dest: '<%= config.dist %>'
+                },
+                // Media
+                {
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>',
+                    src: 'media/{,*/}*.{mp4,mp3}'
+                },
+                // Font Awesome
+                {
+                    expand: true,
+                    dot: true,
+                    cwd: 'bower_components/fontawesome/fonts/',
+                    src: ['**'],
+                    dest: '<%= config.dist %>/styles/fonts/'
                 },
                 // TimelineJS
                 {
