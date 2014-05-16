@@ -194,7 +194,7 @@ module.exports = function (grunt) {
         bowerInstall: {
             app: {
                 src: ['<%= config.app %>/index.html'],
-                exclude: ['bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js']
+                exclude: ['bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap.js']
             },
             sass: {
                 src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}']
@@ -223,15 +223,11 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= config.dist %>'
             },
-            index: {
-                src: '<%= config.app %>/index.html'
-            },
-            timeline: {
-                src: '<%= config.app %>/timeline.html'
-            },
-            galeria: {
-                src: '<%= config.app %>/galeria.html'
-            }
+            html: [
+                '<%= config.app %>/index.html',
+                '<%= config.app %>/timeline.html',
+                '<%= config.app %>/galeria.html'
+                ]
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -338,7 +334,7 @@ module.exports = function (grunt) {
                     expand: true,
                     dot: true,
                     cwd: '.',
-                    src: ['bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*.*'],
+                    src: ['bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap/*.*'],
                     dest: '<%= config.dist %>'
                 },
                 // TimelineJS
