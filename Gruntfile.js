@@ -210,7 +210,7 @@ module.exports = function (grunt) {
                         '<%= config.dist %>/styles/{,*/}*.css',
                         '<%= config.dist %>/images/{,*/}*.*',
                         '<%= config.dist %>/styles/fonts/{,*/}*.*',
-                        '<%= config.dist %>/*.{ico,png}'
+                        '<%= config.dist %>/*.{ico,png}',
                     ]
                 }
             }
@@ -252,6 +252,11 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>/images',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
                     dest: '<%= config.dist %>/images'
+                }, {
+                    expand: true,
+                    cwd: 'bower_components/TimelineJS-Bower/css/',
+                    src: ['{,*/}*.{gif,jpeg,jpg,png}', 'themes/{,*/}*.{gif,jpeg,jpg,png}'],
+                    dest: '<%= config.dist %>/css'
                 }]
             }
         },
@@ -335,6 +340,16 @@ module.exports = function (grunt) {
                     cwd: '.',
                     src: ['bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*.*'],
                     dest: '<%= config.dist %>'
+                },
+                // TimelineJS
+                {
+                    expand: true,
+                    // The path
+                    cwd: 'bower_components/TimelineJS-Bower/css/',
+                    // The source
+                    src: ['{,*/}*.{gif,jpeg,jpg,png}', 'themes/**'],
+                    // The destination
+                    dest: '<%= config.dist %>/css/',
                 }]
             },
             styles: {
@@ -343,7 +358,7 @@ module.exports = function (grunt) {
                 cwd: '<%= config.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
-            }
+            },
         },
 
         // Generates a custom Modernizr build that includes only the tests you
