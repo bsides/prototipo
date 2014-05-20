@@ -42,6 +42,55 @@
 </head>
 
 <body>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Mudar navegação</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Galeria de Fotos</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <!-- <input type="text" class="form-control" placeholder="Search"> -->
+          </div>
+          <button type="submit" class="btn btn-default"><span class="fa fa-home"></span> Início</button>
+
+
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Referências</a></li>
+          <li style="margin:7px 0">
+            <div class="btn-group">
+              <button id="fontIncrease" type="button" class="btn btn-default" title="Aumentar a fonte"><span class="fa fa-font"></span>+</button>
+              <button id="fontReset" type="button" class="btn btn-default" title="Fonte padrão"><span class="fa fa-font"></span></button>
+              <button id="fontDecrease" type="button" class="btn btn-default"title="Diminuir a fonte"><span class="fa fa-font"></span>-</button>
+            </div>
+          </li>
+          <li><a href="#">Fechar <span class="fa fa-times-circle"></span></a></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"></a></li>
+            <li><a href="#">Créditos</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
   <div id="timeline"></div>
 
   <!-- build:js scripts/vendor.js -->

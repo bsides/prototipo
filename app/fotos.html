@@ -35,21 +35,112 @@
     }
   </script>
   <!-- endbuild -->
+
+  <style>
+    body {
+      background: #fff;
+      background-image: none;
+      color: #333;
+    }
+    .reveal {
+      color: #333;
+    }
+    .reveal h1 {
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+    .reveal h1, .reveal h3 {
+      color: deepskyblue;
+    }
+    .reveal h2 {
+      color: royalblue;
+      line-height: 1.2em;
+    }
+
+    .reveal figure span {
+      display: inline-block;
+      position: relative;
+    }
+    .reveal figure figcaption {
+      background: rgba(255,255,255,0.8);
+      padding: 0;
+      font-size: 17px;
+      position: absolute;
+      left: 0;
+      bottom: 35px;
+      right: 0;
+      margin: 0 3%;
+      line-height: 29.14286px;
+      padding: 10px 0;
+    }
+    .reveal figure small {
+      display: block;
+      position: absolute;
+      right: 0;
+      margin-right: 5%;
+      font-size: 0.5em;
+    }
+  </style>
 </head>
 <body>
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <![endif]-->
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Mudar navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Galeria de Fotos</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <!-- <input type="text" class="form-control" placeholder="Search"> -->
+            </div>
+            <button type="submit" class="btn btn-default"><span class="fa fa-home"></span> Início</button>
+
+
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Referências</a></li>
+            <li style="margin:7px 0">
+              <div class="btn-group">
+                <button id="fontIncrease" type="button" class="btn btn-default" title="Aumentar a fonte"><span class="fa fa-font"></span>+</button>
+                <button id="fontReset" type="button" class="btn btn-default" title="Fonte padrão"><span class="fa fa-font"></span></button>
+                <button id="fontDecrease" type="button" class="btn btn-default"title="Diminuir a fonte"><span class="fa fa-font"></span>-</button>
+              </div>
+            </li>
+            <li><a href="#">Fechar <span class="fa fa-times-circle"></span></a></li>
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"></a></li>
+              <li><a href="#">Créditos</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
   <div class="reveal" style="/*width:1024px;height:600px*/">
-
-    <h4 style="text-align:center;margin:0;background:#fff;padding:12px 0;color:#999;font-weight:400">Protótipo de Exemplos OED PNLD 2016</h4>
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
       <section data-transition="linear">
-        <h1>Protótipo</h1>
-        <h3>Exemplos de OEDs simples</h3>
+        <h1>O traço da ilustração e a narrativa visual</h1>
+        <h3>e a relação entre texto e imagem (referências)</h3>
         <p>
           <small>
             Um exemplo rápido e prático sobre o sistema base para OEDs do tipo galeria
@@ -58,65 +149,58 @@
       </section>
 
       <section>
-        <figure>
-          <span>
-            <img src="images/zoom-01.png" alt="" />
-          </span>
-        </figure>
+        Para que os materiais produzidos para alunos do Fundamental I sejam significativos, é necessário que eles sejam composto de <span style="color:green">duas linguagens</span>: verbal e visual.<br /><br />
+        É na <span style="color: blue">relação</span> entre o <span style="color: darkcyan">texto</span> e as <span style="color: purple">imagens</span> que o <span style="darkorange">encantamento</span> é criado e a <span style="color: red">narrativa</span> ganha <span style="color: darkcyan">significado</span>.
+      </section>
+
+      <section>
+        <h2>Por que tanto o traço quanto a composição da narrativa visual da imagem enviada estão ruins:</h2>
+        <p>O termo ilustração narrativa foi empregado por Gombrich (2007) e, embora o autor não expresse uma definição do termo, fica claro que ele refere-se às obras que contam uma história por meio de imagens.  Deve-se entender a imagem (o desenho etc.) como linguagem, um sistema dinâmico de signos que se relacionam diretamente com o desenvolvimento cultural da criança e que ganham sentido nesse contexto.  Boas ilustrações contribuem para o desenvolvimento geral da criança.</p>
+      </section>
+
+      <section>
+        <h2>Por que tanto o traço quanto a composição da narrativa visual da imagem enviada estão ruins:</h2>
+        <p>Sejam individualizadas ou integradas com o texto, as boas ilustrações aprimoram a percepção da criança, estimulam a sua imaginação, alimentam o seu conhecimento, desenvolvem o seu potencial criativo e aumentam o seu sentido de observação. Estas podem dar às crianças o sentido da identidade pessoal e uma consciencialização da sua herança cultural, podem também ajudar a eliminar estereótipos e a corrigir erradas noções de cultura.</p>
+      </section>
+
+      <section>
+        <h2>Por que tanto o traço quanto a composição da narrativa visual da imagem enviada estão ruins:</h2>
+        <p>No livro Formas de pensar o desenho , Edith Derdyk destaca que a “permanência da linha no papel se investe de magia e esta estimula sensorialmente a vontade de prolongar este prazer, o que significa uma intensa atividade interna, incalculável por nós adultos”.</p>
       </section>
 
       <section>
         <figure>
           <span>
-            <img src="images/zoom-02.png" alt="" />
+            <img src="http://puu.sh/8U1I7/6c0d7139dc.png" alt="" />
           </span>
         </figure>
       </section>
 
       <section>
+        <h2 style="color: darkorange;">Sugestão de traço para as produções de OED</h2>
         <figure>
           <span>
-            <img src="images/zoom-03.png" alt="" />
+            <img src="http://puu.sh/8U1Nj/10cb8cb8cf.png" alt="" />
+            <figcaption>“A criança adquire facilmente os seus meios de expressão, e, logo que os adquire, emprega-os para traduzir a sua visão da melhor maneira e não a visão do adulto.” (STERN, 1974, p.28).</figcaption>
           </span>
         </figure>
       </section>
 
       <section>
+        <h2>Referências visuais para as ilustrações narrativas</h2>
         <figure>
           <span>
-            <img src="images/zoom-04.png" alt="" />
+            <img src="http://puu.sh/8U294/2ef726d595.png" alt="" />
+            <figcaption>Cântico dos Cânticos, de Ângela Lago. Imagens criadas a partir de um texto existente.</figcaption>
           </span>
         </figure>
       </section>
 
       <section>
+        <h2>Referências visuais de games e séries para a idade</h2>
         <figure>
           <span>
-            <img src="images/zoom-05.png" alt="" />
-          </span>
-        </figure>
-      </section>
-
-      <section>
-        <figure>
-          <span>
-            <img src="images/zoom-06.png" alt="" />
-          </span>
-        </figure>
-      </section>
-
-      <section>
-        <figure>
-          <span>
-            <img src="images/zoom-07.png" alt="" />
-          </span>
-        </figure>
-      </section>
-
-      <section>
-        <figure>
-          <span>
-            <img src="images/zoom-08.png" alt="" />
+            <img src="http://puu.sh/8U2rz/dab48ae31e.png" alt="" />
           </span>
         </figure>
       </section>
@@ -135,8 +219,8 @@
   <!-- build:js scripts/plugins.js -->
   <script src="scripts/plugins.js"></script>
   <!-- endbuild -->
-  <!-- build:js({app,.tmp}) scripts/main.js -->
-  <script src="scripts/main.js"></script>
+  <!-- build:js({app,.tmp}) scripts/fotos.js -->
+  <script src="scripts/fotos.js"></script>
   <!-- endbuild -->
 </body>
 </html>
